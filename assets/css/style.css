@@ -14,19 +14,18 @@ body {
     display: inline-flex;
     font-size: 50px;
     color: #604807;
-    margin: 45px;
+    margin: 10px;
 }
 
-header {
+.header {
     width: 100%;
     margin-top: 0;
     margin-bottom: 7px;
-    height: 27%;
-    padding: 27px;
+    padding: 10px;
     background-color: #edcd41;
     position:fixed;
-    z-index: 1;
-    background-image: url('../images/SL-072321-44560-17copy.jpg')
+    background-image: url('../images/SL-072321-44560-17copy.jpg');
+    z-index: 10;
 }
 
 .header nav {
@@ -47,9 +46,69 @@ nav ul li{
     color: #604807;
 }
 
+main{
+    padding-top: 270px;
+    padding-left: 20px;
+    flex: 20;
+}
+
+.about{
+    padding-bottom: 70px;
+}
+
+.about h2, .work h2{
+    border-left: 5px solid #604807;
+    font-size: 32px;
+    font-weight: bolder;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.about p{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.project{
+    position: relative;
+    width: 500px;
+    height: auto;
+    padding-bottom: 40px;
+    padding-top: 20px;
+
+}
+
+.project :hover img{
+    transform: scale(1.01);
+    border: 5px solid #f0aa06;
+    opacity: 75%;
+}
+
+.project h3{
+    font-size: 24px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 1;
+    background-color: #edcd41;
+    padding: 10px;
+}
+
+.project p{
+    font-size: 20px;
+    padding-top: 10px;
+}
+
 a{
     color: inherit;
     text-decoration: none;
+}
+
+
+.project img{
+    width: 500px;
+    height: auto;
+    opacity: 100%;
 }
 
 .pic img{
@@ -59,4 +118,15 @@ a{
     margin-right: 10px;
     min-height: 100%;
     border-radius: 17px;
+}
+
+footer{
+    padding: 40px;
+    text-align: center;
+    background-color: #f0aa06;
+}
+
+.socials h3{
+    font-size: 24px;
+    padding: 10px;
 }

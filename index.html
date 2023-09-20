@@ -10,13 +10,13 @@
 </head>
 
 <body>
-    <header>
-       <section class="image">
+    <header class="header">
+       <section class="pic">
         <img src="assets/images/abigail.JPG" alt="image of me">
        </section>
        <h1>Abigail Cinco</h1>
        <nav>
-        <ul>
+        <ul>    
             <li> <a href="#about">About Me</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#socials">Contact Me</a></li>
@@ -24,32 +24,49 @@
        </nav>
     </header>
 
-    <main id="about">
-        <h2>About Me</h2>
-        <p>Hello, I am Abigail, an aspiring web developer! I attended University of Toronto and am learning skills pertaining to fullstack web development.</p>
+    <main id="about" class="aboutme">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hello, I am Abigail, an aspiring web developer! I attended University of Toronto and am learning skills pertaining to fullstack web development.</p>
+        </section>
+
+        <section id="work" class="work">
+            <h2>Things I've Worked On</h2>
+                <div class="project">
+                    <a href="https://github.com/divyakrishnan15/RealEstateApp/tree/main">
+                        <img src="assets/images/realtyreach.png" alt="the real estate site I helped develop">
+                        <div class="desc">
+                            <h3>Realty Reach App</h3>
+                            <p>An app that helps you browse the real estate market</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/Koro999/Library-Content-Manager">
+                        <img src="assets/images/BiblioLibrary.png" alt="the library manager app I helped develop">
+                        <div>
+                            <h3>Library Manager App</h3>
+                            <p>An app that lets you browse a variety of books and manage the ones loaned to you</p>
+                        </div>    
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/abi-gail17/abigail-portfolio">
+                        <img src="assets/images/girlcoding.jpg" alt="my portfolio">
+                        <div>
+                            <h3>Portfolio</h3>
+                            <p>A site showing all my work and projects</p>
+                        </div>
+                    </a>
+                </div>
+        </section>
     </main>
-
-    <section id="work">
-        <h2>Things I've Worked On</h2>
-        <article class="project">
-            <h3>Realty Reach App</h3>
-            <p>An app that helps you browse the real estate market</p>
-
-        </article>
-        <article class="project">
-            <h3>Library Manager App</h3>
-            <p>An app that lets you browse a variety of books and manage the ones loaned to you</p>
-        </article>
-        <article class="project">
-            <h3>Portfolio</h3>
-            <p>A site showing all my work and projects</p>
-        </article>
-    </section>
     
-    <footer id="socials">
+    <footer class="socials">
+        <h3>Contact Me</h3>
         <ul>
             <li><a href="https://github.com/abi-gail17">My Github</a></li>
-            <li><a href="https://twitter.com/A_T_C_5"></a>My Twitter</li>
+            <li><a href="https://twitter.com/A_T_C_5">My Twitter</a></li>
             <li><a href="mailto:cinco.de.abby@gmail.com">My Email</a></li>
         </ul>
     </footer>
